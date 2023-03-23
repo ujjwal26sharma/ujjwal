@@ -22,4 +22,22 @@ def typingErrors(prompt):
             else:
                 errors += 1
     return errors
+# calculate the speed in words per minute
+def typingSpeed(iprompt, stime, etime):
+    global time
+    global iwords
+
+    iwords = iprompt.split()
+    twords = len(iwords)
+    speed = twords / time
+
+    return speed
+
+# calculate total time elapsed
+def timeElapsed(stime, etime):
+    time = etime - stime
+
+    return time
+
+
 
