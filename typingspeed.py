@@ -34,28 +34,6 @@ def typingSpeed(iprompt, stime, etime):
 
     return speed
 
-# calculate total time elapsed
-def timeElapsed(stime, etime):
-    time = etime - stime
-
-    return time
-if _name_ == '_main_':
-    prompt = "Hi my name is Joseph Marino."
-    print("Type this:- '", prompt, "'")
-
-    # listening to input ENTER
-    input("press ENTER when you are ready!")
-
-    # recording time for input
-    stime = time()
-    iprompt = input()
-    etime = time()
-
-    # gather all the information returned from functions
-    time = round(timeElapsed(stime, etime), 2)
-    speed = typingSpeed(iprompt, stime, etime)
-    errors = typingErrors(prompt)
-
     # printing all the required data
     print("Total Time elapsed : ", time, "s")
     print("Your Average Typing Speed was : ", speed, "words / minute")
