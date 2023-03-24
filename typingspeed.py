@@ -54,6 +54,11 @@ if _name_ == '_main_':
     time = round(timeElapsed(stime, etime), 2)
     speed = typingSpeed(iprompt, stime, etime)
     errors = typingErrors(prompt)
+    
+    # printing all the required data
+    print("Total Time elapsed : ", time, "s")
+    print("Your Average Typing Speed was : ", speed, "words / minute")
+    print("With a total of : ", errors, "errors")
 
     
 
