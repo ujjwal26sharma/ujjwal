@@ -30,6 +30,7 @@ def typingSpeed(iprompt, stime, etime):
     iwords = iprompt.split()
     twords = len(iwords)
     speed = twords / time
+    print("hello");
 
     return speed
 
