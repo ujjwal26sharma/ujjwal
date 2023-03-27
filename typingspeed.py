@@ -39,7 +39,7 @@ def timeElapsed(stime, etime):
     time = etime - stime
 
     return time
-if _name_ == '_main_':
+if _name_ == '__main__':
     prompt = "Hi my name is Joseph Marino."
     print("Type this:- '", prompt, "'")
 
