@@ -33,7 +33,6 @@ def typingSpeed(iprompt, stime, etime):
     print("hello");
 
     return speed
-
 # calculate total time elapsed
 def timeElapsed(stime, etime):
     time = etime - stime
@@ -55,6 +54,7 @@ if _name_ == '__main__':
     time = round(timeElapsed(stime, etime), 2)
     speed = typingSpeed(iprompt, stime, etime)
     errors = typingErrors(prompt)
+
 
     # printing all the required data
     print("Total Time elapsed : ", time, "s")
